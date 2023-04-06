@@ -1,0 +1,58 @@
+/* GLOBAL STYLES */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* overflow: hidden; */
+}
+
+body,
+input,
+button,
+textarea,
+select {
+  font-family: 'Space Mono', sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #141d2f;
+  color: #fff;
+}
+.container.light {
+  background: #f6f8ff;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 3rem 2rem;
+  }
+}
+
+/* DARK/LIGHT MODES  */
+/* darkTheme: {
+      containerBackground: #141D2F,
+      themeBtn: #fff,
+      CardBg: #1E2A47,
+      textNorm: #fff,
+      textBolded: #fff,
+}
+
+lightTheme: {
+      containerBackground: #F6F8FF,
+      themeBtn: #4b6a9b,
+      CardBg: #FEFEFE,
+      textNorm: #697c9A,
+      textBolded: #2B3442,
+} */

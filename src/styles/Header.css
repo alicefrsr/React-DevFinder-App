@@ -1,0 +1,38 @@
+.header-container {
+  width: 100%;
+  max-width: 73.3rem;
+  min-width: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.toggle-theme-btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 1rem;
+  background: none;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  letter-spacing: 0.25rem;
+  padding: 1rem 0 1rem 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.toggle-theme-btn.light {
+  color: #4b6a9b;
+}
+
+.toggle-theme-btn:hover {
+  outline: 1px dashed #0079ff;
+}
+
+.theme-icons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
