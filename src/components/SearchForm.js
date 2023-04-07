@@ -1,14 +1,15 @@
 import '../styles/SearchForm.css';
 import { BsSearch } from 'react-icons/bs';
 
+// import { useContext } from 'react';
+// import { ThemeContext } from '../contexts/themeContext';
 import { useTheme } from '../contexts/themeContext';
-// import { useTheme } from '../hooks/useTheme';
 
 import { useState, useRef, useEffect } from 'react';
 
 const SearchForm = ({ onSearchUser, user }) => {
   const { theme } = useTheme();
-  // console.log('theme from SEARCH FROM:', theme);
+  console.log('theme from SEARCH FORM:', theme);
 
   const [input, setInput] = useState('');
 

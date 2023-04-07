@@ -1,17 +1,14 @@
 import '../styles/DevFinderApp.css';
 
+// import { useContext } from 'react';
+// import { ThemeContext } from '../contexts/themeContext';
 import { useTheme } from '../contexts/themeContext';
-// import { useTheme } from '../hooks/useTheme';
 
 const DevFinderApp = props => {
   const { theme } = useTheme();
-  // console.log('theme from DEVFINDERAPP:', theme);
+  console.log('theme from DEVFINDER APP:', theme);
 
-  return (
-    <div>
-      <div className={`container ${theme}`}>{props.children}</div>
-    </div>
-  );
+  return <div className={`container ${theme}`}>{props.children}</div>;
 };
 
 export default DevFinderApp;

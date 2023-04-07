@@ -6,14 +6,16 @@ import { BsGithub } from 'react-icons/bs';
 import { FaRegBuilding } from 'react-icons/fa';
 
 import CardBg from './CardBg';
+
+// import { useContext } from 'react';
+// import { ThemeContext } from '../contexts/themeContext';
 import { useTheme } from '../contexts/themeContext';
-// import { useTheme } from '../hooks/useTheme';
 
 import moment from 'moment'; // for date formatting
 
 const UserCard = ({ user }) => {
   const { theme } = useTheme();
-  // console.log('theme from user profile:', theme);
+  console.log('theme from USER PROFILE:', theme);
   return (
     <CardBg>
       <section className='profile-container'>

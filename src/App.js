@@ -1,3 +1,4 @@
+import './App.css';
 import ThemeProvider from './contexts/themeContext';
 import DevFinderApp from './components/DevFinderApp';
 
