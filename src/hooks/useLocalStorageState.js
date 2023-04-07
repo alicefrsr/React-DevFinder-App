@@ -9,7 +9,7 @@ export default function useLocalStorageState(key, defaultValue) {
     let value;
     try {
       // value = JSON.parse(window.localStorage.getItem(key) || String(defaultValue)); // when defaultValue is array or object
-      value = window.localStorage.getItem(key || defaultValue); // when defaultValue is string, num, bool
+      return JSON.parse(window.localStorage.getItem(key)) || defaultValue; // here defaultValue is already a string
     } catch (e) {
       value = defaultValue;
     }
@@ -18,8 +18,7 @@ export default function useLocalStorageState(key, defaultValue) {
 
   // 2. use useEffect to update localStorage when this piece of state changes
   useEffect(() => {
-    // window.localStorage.setItem(key, JSON.stringify(state)); // when state is array or object
-    window.localStorage.setItem(key, state); // when state is string ex 'dark'
+    window.localStorage.setItem(key, JSON.stringify(state));
   }, [state]);
   return [state, setState];
 }
