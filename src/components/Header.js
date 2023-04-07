@@ -7,7 +7,7 @@ import { useTheme } from '../contexts/themeContext';
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
-  console.log('theme from HEADER:', theme);
+  // console.log('theme from HEADER:', theme);
 
   return (
     <header className='header-container'>

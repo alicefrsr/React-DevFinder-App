@@ -6,7 +6,7 @@ import { useTheme } from '../contexts/themeContext';
 
 const CardBg = props => {
   const { theme } = useTheme();
-  console.log('theme from CARD BG:', theme);
+  // console.log('theme from CARD BG:', theme);
 
   return <main className={`bg-card ${theme}`}>{props.children}</main>;
 };

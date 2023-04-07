@@ -15,7 +15,7 @@ import moment from 'moment'; // for date formatting
 
 const UserCard = ({ user }) => {
   const { theme } = useTheme();
-  console.log('theme from USER PROFILE:', theme);
+  // console.log('theme from USER PROFILE:', theme);
   return (
     <CardBg>
       <section className='profile-container'>

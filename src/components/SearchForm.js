@@ -9,7 +9,7 @@ import { useState, useRef, useEffect } from 'react';
 
 const SearchForm = ({ onSearchUser, user }) => {
   const { theme } = useTheme();
-  console.log('theme from SEARCH FORM:', theme);
+  // console.log('theme from SEARCH FORM:', theme);
 
   const [input, setInput] = useState('');
 
