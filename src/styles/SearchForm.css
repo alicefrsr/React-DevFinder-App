@@ -1,17 +1,16 @@
 .search-form {
+  max-width: 73.3rem;
+  min-width: 38rem;
+  width: 100%;
+  height: 7rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: #1e2a47;
   border-radius: 1.5rem;
-  height: 7rem;
-  max-width: 73.3rem;
-  min-width: 38rem;
-  width: 100%;
   margin-top: 3.6rem;
   padding: 0.7rem 0.7rem 0.7rem 1.6rem;
   transition: height 0.3s ease;
-  /* position: relative; */
 }
 
 .search-form.light {
@@ -29,8 +28,8 @@
 }
 
 .search-input {
+  height: 4rem;
   flex: 1;
-  height: 70%;
   font-size: 1.6rem;
   background: none;
   color: #fff;
@@ -60,16 +59,16 @@
 }
 
 .search-btn {
-  background: #0079ff;
   width: 8.5rem;
   height: 100%;
   font-size: 1.6rem;
   font-weight: bold;
+  background: #0079ff;
   color: #fff;
   border: none;
   border-radius: 1rem;
   cursor: pointer;
-  /* transition: all 0.3s ease-out; */
+  transition: all 0.3s ease-out;
 }
 
 .search-btn:hover {

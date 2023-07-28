@@ -37,7 +37,8 @@ const UserCard = ({ user }) => {
             <BsGithub className='github-icon' />
             <a
               href={`https://github.com/${user.login}`}
-              target='_blank'>{`https://github.com/${user.login}`}</a>
+              target='_blank'
+              rel='noreferrer'>{`https://github.com/${user.login}`}</a>
           </div>
           <div className={`repos-container ${theme}`}>
             <div className='repos-container-heading'>Repos</div>

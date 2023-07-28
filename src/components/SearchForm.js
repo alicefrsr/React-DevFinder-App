@@ -21,14 +21,14 @@ const SearchForm = ({ onSearchUser, user }) => {
 
   const handleChange = e => {
     setInput(e.target.value);
-    console.log(e.target.value);
+    // console.log(e.target.value);
   };
 
   const handleSubmit = e => {
     e.preventDefault();
     if (input !== '') {
       onSearchUser(input);
-      console.log(input);
+      // console.log(input);
       setInput('');
     }
   };

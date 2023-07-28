@@ -1,4 +1,4 @@
-// used in context file to create state from localStorage if exists
+// used in context file to create state (theme state) from localStorage if exists
 
 import { useState, useEffect } from 'react';
 
@@ -19,11 +19,11 @@ export default function useLocalStorageState(key, defaultValue) {
   // 2. use useEffect to update localStorage when this piece of state changes
   useEffect(() => {
     window.localStorage.setItem(key, JSON.stringify(state));
-  }, [state]);
+  }, [key, state]);
   return [state, setState];
 }
 
-// NOTES, use cases:
+// NOTES (to myself) & use cases:
 // in main TodoApp: const [todos, setTodos] = useLocalStorageState("todos", []);
 // instead of:      const [todos, setTodos] = useState(initialTodos);
 // same as useState(); only diff is we intercepted it, based its value on stored value,

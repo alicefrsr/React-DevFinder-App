@@ -19,7 +19,7 @@ const ThemeProvider = props => {
 
   const [theme, setTheme] = useLocalStorageState('theme', 'dark');
 
-  // 2. use useEffect to update localStorage when this piece of state changes
+  // 3. use useEffect to update localStorage when this piece of state changes
   // useEffect(() => {
   //   window.localStorage.setItem('theme', JSON.stringify(theme));
   // }, [theme]);
