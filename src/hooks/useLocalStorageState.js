@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from 'react';
 
-// ex. localStorage key = 'tasks', defaultValue [] / {} OR 'theme', defaultValue 'dark'
+// ex. localStorage key = 'tasks', defaultValue [] / {} OR '', here defaultValue 'dark'
 export default function useLocalStorageState(key, defaultValue) {
+  console.log('modified hook');
   // 1. make piece of state based of value in localStorage
   const [state, setState] = useState(() => {
     let value;
@@ -18,7 +19,8 @@ export default function useLocalStorageState(key, defaultValue) {
 
   // 2. use useEffect to update localStorage when this piece of state changes
   useEffect(() => {
-    window.localStorage.setItem(key, JSON.stringify(state));
+    // window.localStorage.setItem(key, state); // no
+    window.localStorage.setItem(key, JSON.stringify(state)); // we need a string
   }, [key, state]);
   return [state, setState];
 }
