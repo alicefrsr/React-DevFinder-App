@@ -5,6 +5,7 @@ import DevFinderApp from './components/DevFinderApp';
 import Header from './components/Header';
 import SearchForm from './components/SearchForm';
 import Loading from './components/Loading';
+import Error from './components/Error';
 import UserProfile from './components/UserProfile';
 import axios from 'axios';
 
@@ -13,20 +14,27 @@ import { useState } from 'react';
 const BASE_URL = 'https://api.github.com/users/';
 
 function App() {
-  const [loading, setloading] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [user, setUser] = useState('');
-  // const [error, setError] = useState(false); // for later
+  const [error, setError] = useState('');
 
-  // (no need for useEffect() here because it's handled by the event)
+  // (no need for useEffect() here because the side effect is handled by the event)
   const onSearchUser = async user => {
     try {
-      if (user) setUser('');
-      setloading(true);
+      if (user) setUser(''); // default: display only search bar, no profile
+      setLoading(true);
       const resUser = await axios.get(`${BASE_URL}${user}`);
-      setloading(false);
+      if (!resUser.status === 200) {
+        throw new Error('error...');
+      }
+
       setUser(resUser.data);
+      console.log(resUser.status); // 200
     } catch (error) {
-      console.log('Something went wrong:', error.message);
+      console.log(error.message); // Network Error
+      setError(error.message);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -40,7 +48,8 @@ function App() {
             onSearchUser={onSearchUser}
           />
           {loading && <Loading />}
-          {user && <UserProfile user={user} />}
+          {!loading && !error && user && <UserProfile user={user} />}
+          {error && <Error message={error} />}
         </DevFinderApp>
       </ThemeProvider>
     </>
