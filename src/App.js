@@ -19,10 +19,11 @@ function App() {
   const [error, setError] = useState('');
 
   // (no need for useEffect() here because the side effect is handled by the event)
-  const onSearchUser = async user => {
+  const onSearchUser = async (user) => {
     try {
       if (user) setUser(''); // default: display only search bar, no profile
       setLoading(true);
+      setError('');
       const resUser = await axios.get(`${BASE_URL}${user}`);
       if (!resUser.status === 200) {
         throw new Error('error...');
@@ -43,10 +44,7 @@ function App() {
       <ThemeProvider>
         <DevFinderApp>
           <Header />
-          <SearchForm
-            user={user}
-            onSearchUser={onSearchUser}
-          />
+          <SearchForm user={user} onSearchUser={onSearchUser} />
           {loading && <Loading />}
           {!loading && !error && user && <UserProfile user={user} />}
           {error && <Error message={error} />}

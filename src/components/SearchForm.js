@@ -13,22 +13,21 @@ const SearchForm = ({ onSearchUser, user }) => {
 
   const [input, setInput] = useState('');
 
-  // useRef to set focus on input field when loading and re-rendering
-  const inputRef = useRef(null);
-  useEffect(() => {
-    inputRef.current.focus();
-  }, [user]);
+  // // useRef to set focus on input field when loading and re-rendering
+  // // same thing as autoFocus on input element ?
+  // const inputRef = useRef(null);
+  // useEffect(() => {
+  //   inputRef.current.focus();
+  // }, [user]);
 
   const handleChange = e => {
     setInput(e.target.value);
-    // console.log(e.target.value);
   };
 
   const handleSubmit = e => {
     e.preventDefault();
     if (input !== '') {
       onSearchUser(input);
-      // console.log(input);
       setInput('');
     }
   };
@@ -49,11 +48,12 @@ const SearchForm = ({ onSearchUser, user }) => {
       <input
         className={`search-input ${theme}`}
         type='text'
-        ref={inputRef}
+        // ref={inputRef} // autoFocus instead
         id='search'
         placeholder='Search Github username...'
         value={input}
         onChange={handleChange}
+        autoFocus
       />
       <button
         className='search-btn'

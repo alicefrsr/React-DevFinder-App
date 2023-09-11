@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 // ex. localStorage key = 'tasks', defaultValue [] / {} OR '', here defaultValue 'dark'
 export default function useLocalStorageState(key, defaultValue) {
-  console.log('modified hook');
+  // console.log('modified hook');
   // 1. make piece of state based of value in localStorage
   const [state, setState] = useState(() => {
     let value;
