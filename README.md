@@ -7,7 +7,7 @@ fetch user data from API, CSS integration, responsive CSS.
 
 ### Functionalities:
 
-- search for users in Github API by user handle
+- search for users in Github API by user handle, example: 'octocat'
 - toggle light / dark mode
 - theme saved to local storage
 
