@@ -11,7 +11,7 @@ fetch user data from API, CSS integration, responsive CSS.
 - toggle light / dark mode
 - theme saved to local storage
 
-### Visit the site:
+### Live demo:
 
 https://devfinder-demo.netlify.app/
 
