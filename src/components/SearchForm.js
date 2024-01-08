@@ -5,7 +5,7 @@ import { BsSearch } from 'react-icons/bs';
 // import { ThemeContext } from '../contexts/themeContext';
 import { useTheme } from '../contexts/themeContext';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
 
 const SearchForm = ({ onSearchUser, user }) => {
   const { theme } = useTheme();
@@ -20,11 +20,11 @@ const SearchForm = ({ onSearchUser, user }) => {
   //   inputRef.current.focus();
   // }, [user]);
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     setInput(e.target.value);
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (input !== '') {
       onSearchUser(input);
@@ -33,16 +33,9 @@ const SearchForm = ({ onSearchUser, user }) => {
   };
 
   return (
-    <form
-      className={`search-form ${theme}`}
-      onSubmit={handleSubmit}>
-      <label
-        className='input-label'
-        htmlFor='search'>
-        <BsSearch
-          className='search-icon'
-          aria-label='search Github username'
-        />
+    <form className={`search-form ${theme}`} onSubmit={handleSubmit}>
+      <label className='input-label' htmlFor='search'>
+        <BsSearch className='search-icon' aria-label='search Github username' />
       </label>
 
       <input
@@ -55,9 +48,7 @@ const SearchForm = ({ onSearchUser, user }) => {
         onChange={handleChange}
         autoFocus
       />
-      <button
-        className='search-btn'
-        type='submit'>
+      <button className='search-btn' type='submit'>
         Search
       </button>
     </form>
