@@ -1,11 +1,13 @@
 .bg-card {
   display: flex;
+
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #1e2a47;
+
   max-width: 73.3rem;
-  min-width: 38rem;
+  /* min-width: 38rem; */
   width: 100%;
   font-size: 1.6rem;
   /* border-radius: 1.5rem 1.5rem 0 0; */

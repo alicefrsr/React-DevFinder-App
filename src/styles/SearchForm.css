@@ -1,7 +1,6 @@
 .search-form {
   /* max-width: 73.3rem; */
-  max-width: 470px;
-
+  max-width: 400px;
   width: 100%;
   height: 7rem;
   display: flex;
@@ -63,7 +62,7 @@
 .search-btn {
   width: 10rem;
   height: 100%;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: bold;
   background: #0079ff;
   color: #fff;
@@ -91,5 +90,6 @@
 
   .search-btn {
     width: 8.5rem;
+    font-size: 1.6rem;
   }
 }

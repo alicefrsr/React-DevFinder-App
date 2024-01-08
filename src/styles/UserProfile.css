@@ -1,7 +1,7 @@
 .profile-container {
   padding: 3rem 1rem;
+  max-width: 400px;
   width: 100%;
-  max-width: 470px;
 }
 
 /* CARD HEADER (profile pix, name, @login, date joined*/
@@ -16,6 +16,7 @@ img {
   height: 10rem;
   border-radius: 50%;
 }
+
 h1 {
   font-size: 2rem;
 }
@@ -34,7 +35,6 @@ h1 {
 }
 
 .date {
-  /* font-size: 1.4rem; */
   font-size: 1.2rem;
 }
 
@@ -71,7 +71,7 @@ h1 {
 }
 
 .repos-container {
-  min-width: 80%;
+  min-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 1rem;
@@ -115,24 +115,24 @@ h1 {
 .icons {
   font-size: 2.2rem;
 }
+
 @media only screen and (min-width: 479px) {
-  .card-header-info {
+  .profile-container {
     width: 100%;
+    max-width: 600px;
   }
+
   h1 {
     font-size: 2.4rem;
   }
   .date {
-    /* font-size: 1.4rem; */
     font-size: 1.4rem;
   }
   .bio {
-    padding: 2rem 0;
     font-size: 1.6rem;
   }
   .github-icon {
-    color: #0079ff;
-    font-size: 2.2rem;
+    font-size: 2.6rem;
   }
 
   .github-link {
@@ -141,14 +141,12 @@ h1 {
     gap: 1rem;
     margin: 1rem 0;
     gap: 1rem;
-    /* position: relative; */
-    font-size: 1.6rem;
   }
   .repos-container {
     /* min-width: 80%; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 4rem;
+    column-gap: 5rem;
     background: #141d2f;
     border-radius: 1rem;
     padding: 1.6rem 2.4rem;
@@ -181,9 +179,7 @@ h1 {
   .profile-container {
     padding: 3rem 2rem;
   }
-  .repos-container {
-    column-gap: 5rem;
-  }
+
   .card-content,
   .card-footer {
     margin-left: 16rem;
