@@ -90,10 +90,11 @@ img {
 /* CARD FOOTER (location, twitter, website, comapny)*/
 .card-footer {
   display: grid;
+  align-items: center;
   grid-template-columns: 1fr;
   column-gap: 4rem;
   row-gap: 1.4rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .card-footer-info {
@@ -106,7 +107,7 @@ img {
   font-size: 2.2rem;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 450px) {
   .card-footer {
     grid-template-columns: 1fr 1fr;
     column-gap: 4rem;

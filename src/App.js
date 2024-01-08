@@ -18,7 +18,7 @@ function App() {
   const [user, setUser] = useState('');
   const [error, setError] = useState('');
 
-  // (no need for useEffect() here because the side effect is handled by the event)
+  // (no need for useEffect() here because side effect is handled by the event)
   const onSearchUser = async (user) => {
     try {
       if (user) setUser(''); // default: display only search bar, no profile
@@ -30,9 +30,9 @@ function App() {
       }
 
       setUser(resUser.data);
-      console.log(resUser.status); // 200
+      console.log(resUser.status);
     } catch (error) {
-      console.log(error.message); // Network Error
+      console.log(error.message);
       setError(error.message);
     } finally {
       setLoading(false);

@@ -35,3 +35,10 @@
   align-items: center;
   gap: 2rem;
 }
+
+@media (max-width: 450px) {
+  .header-container {
+    min-width: 36rem;
+    padding: 0 1rem;
+  }
+}
