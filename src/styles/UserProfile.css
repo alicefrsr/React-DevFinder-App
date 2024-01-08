@@ -13,7 +13,7 @@
 }
 
 img {
-  height: 10rem;
+  height: 8rem;
   border-radius: 50%;
 }
 
@@ -32,6 +32,7 @@ h1 {
 .login {
   color: #0079ff;
   margin-bottom: 1rem;
+  font-size: 1.2rem;
 }
 
 .date {
@@ -56,7 +57,7 @@ h1 {
   margin: 1rem 0;
   gap: 1rem;
   /* position: relative; */
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .github-link a {
@@ -67,7 +68,6 @@ h1 {
 .github-link a:hover,
 .github-link a:focus {
   text-decoration: underline;
-  /* border-bottom: 1px dashed #0079ff; */
 }
 
 .repos-container {
@@ -121,12 +121,20 @@ h1 {
     width: 100%;
     max-width: 600px;
   }
+  img {
+    height: 10rem;
+    border-radius: 50%;
+  }
 
   h1 {
     font-size: 2.4rem;
   }
   .date {
     font-size: 1.4rem;
+  }
+
+  .login {
+    font-size: 1.6rem;
   }
   .bio {
     font-size: 1.6rem;
@@ -141,6 +149,7 @@ h1 {
     gap: 1rem;
     margin: 1rem 0;
     gap: 1rem;
+    font-size: 1.4rem;
   }
   .repos-container {
     /* min-width: 80%; */

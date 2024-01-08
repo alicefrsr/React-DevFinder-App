@@ -11,7 +11,7 @@
   color: #fff;
   position: absolute;
   top: 0;
-  padding: 3rem 2rem;
+  /* padding: 3rem 2rem; */
 }
 
 .container.light {
@@ -19,8 +19,8 @@
   color: #141d2f;
 }
 
-/* @media only screen and (min-width: 479px) {
+@media only screen and (min-width: 479px) {
   .container {
-   
+    padding: 3rem 2rem;
   }
-} */
+}

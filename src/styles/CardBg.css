@@ -10,8 +10,8 @@
   /* min-width: 38rem; */
   width: 100%;
   font-size: 1.6rem;
-  /* border-radius: 1.5rem 1.5rem 0 0; */
-  border-radius: 1.5rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+
   margin-top: 2.6rem;
   padding: 1.6rem;
   transition: height 0.3s ease;
@@ -24,8 +24,8 @@
   color: #697c9a;
 }
 
-/* @media only screen and (min-width: 479px) {
+@media only screen and (min-width: 479px) {
   .bg-card {
     border-radius: 1.5rem;
   }
-} */
+}
