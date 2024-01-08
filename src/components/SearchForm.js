@@ -34,7 +34,9 @@ const SearchForm = ({ onSearchUser, user }) => {
 
   return (
     <form className={`search-form ${theme}`} onSubmit={handleSubmit}>
-      <label className='input-label' htmlFor='search'></label>
+      <label className='input-label' htmlFor='search'>
+        <BsSearch className='search-icon' aria-label='search Github username' />
+      </label>
 
       <input
         className={`search-input ${theme}`}
@@ -47,7 +49,7 @@ const SearchForm = ({ onSearchUser, user }) => {
         autoFocus
       />
       <button className='search-btn' type='submit'>
-        <BsSearch className='search-icon' aria-label='search' />
+        Search
       </button>
     </form>
   );
