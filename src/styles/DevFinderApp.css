@@ -1,7 +1,7 @@
 /* CONTAINER */
 
 .container {
-  height: fit-content;
+  height: 100dvh;
   width: 100dvw;
   display: flex;
   flex-direction: column;
@@ -19,8 +19,8 @@
   color: #141d2f;
 }
 
-@media only screen and (min-width: 479px) {
+/* @media only screen and (min-width: 479px) {
   .container {
-    height: 100dvh;
+   
   }
-}
+} */
