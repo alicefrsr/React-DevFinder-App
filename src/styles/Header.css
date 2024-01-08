@@ -5,8 +5,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1rem;
-  margin-top: 20rem;
+  padding: 0 2rem;
+  margin-top: 10rem;
 }
 
 .toggle-theme-btn {
