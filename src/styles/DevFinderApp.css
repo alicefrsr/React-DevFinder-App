@@ -18,7 +18,7 @@
   color: #141d2f;
 }
 
-@media (min-width: 450px) {
+@media only screen and (min-width: 479px) {
   .container {
     padding: 3rem 2rem;
   }

@@ -107,7 +107,7 @@ img {
   font-size: 2.2rem;
 }
 
-@media (min-width: 450px) {
+@media only screen and (min-width: 479px) {
   .card-footer {
     grid-template-columns: 1fr 1fr;
     column-gap: 4rem;
@@ -116,7 +116,7 @@ img {
   }
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   img {
     height: 12rem;
   }
