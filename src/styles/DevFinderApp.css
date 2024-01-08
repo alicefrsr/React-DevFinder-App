@@ -1,7 +1,7 @@
 /* CONTAINER */
 
 .container {
-  height: 100dvh;
+  height: fit-content;
   width: 100dvw;
   display: flex;
   flex-direction: column;
@@ -11,6 +11,7 @@
   color: #fff;
   position: absolute;
   top: 0;
+  padding: 3rem 2rem;
 }
 
 .container.light {
@@ -20,6 +21,6 @@
 
 @media only screen and (min-width: 479px) {
   .container {
-    padding: 3rem 2rem;
+    height: 100dvh;
   }
 }
