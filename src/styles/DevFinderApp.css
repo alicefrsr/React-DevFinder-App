@@ -18,7 +18,7 @@
   color: #141d2f;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 450px) {
   .container {
     padding: 3rem 2rem;
   }

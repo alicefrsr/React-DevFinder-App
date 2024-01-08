@@ -1,11 +1,12 @@
 .header-container {
   max-width: 73.3rem;
-  min-width: 40rem;
+  min-width: 36rem;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
+  margin-top: 10rem;
 }
 
 .toggle-theme-btn {
@@ -36,9 +37,10 @@
   gap: 2rem;
 }
 
-@media (max-width: 450px) {
+@media (min-width: 450px) {
   .header-container {
+    padding: 0;
+    margin-top: 0;
     min-width: 36rem;
-    padding: 0 1rem;
   }
 }
